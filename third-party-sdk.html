@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paws To Pass - Third-Party SDK Notice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><a href="index.html">Paws To Pass / 老鼠进洞</a></div>
+      <nav class="nav">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="third-party-sdk.html">Third-Party SDK</a>
+        <a href="resources-licenses.html">Resources & Licenses</a>
+      </nav>
+    </header>
+    <article class="article">
+      <div class="kicker">Third-Party SDK Notice</div>
+      <h1>Current public release dependencies</h1>
+      <p class="meta">Updated: 2026-05-14</p>
+
+      <section class="section">
+        <h2>First-party telemetry service</h2>
+        <ul>
+          <li>Purpose: anonymous or pseudonymous browser telemetry and gameplay reporting</li>
+          <li>Current identity scope: <code>session_only</code> in the current itch release telemetry configuration; no cross-session telemetry <code>player_id</code> is stored locally by default</li>
+          <li>Current endpoint family: <code>marble-drop-telemetry*.workers.dev</code></li>
+          <li>Current data path: browser telemetry client -> Cloudflare Worker -> Cloudflare D1</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Cloudflare Workers + D1</h2>
+        <ul>
+          <li>Purpose: first-party event ingest, storage, and aggregation</li>
+          <li>Service-layer note: Cloudflare may use necessary service cookies, network logs, and related infrastructure identifiers for service security, delivery, and logging</li>
+          <li>Implementation family: Worker ingest endpoint plus D1 event and aggregate tables</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Godot / Godot Mono runtime</h2>
+        <ul>
+          <li>Purpose: game runtime and C# execution</li>
+          <li>Engine version used by this project: Godot <code>4.6</code></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Not included in the current public scope</h2>
+        <ul>
+          <li>rewarded ads</li>
+          <li>Google AdMob / Google Mobile Ads SDK browser integration</li>
+          <li>account sign-in SDKs</li>
+          <li>social-sharing SDKs</li>
+          <li>external analytics SDKs beyond the first-party telemetry stack already described above</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

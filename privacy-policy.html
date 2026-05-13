@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paws To Pass - Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><a href="index.html">Paws To Pass / 老鼠进洞</a></div>
+      <nav class="nav">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+        <a href="third-party-sdk.html">Third-Party SDK</a>
+        <a href="resources-licenses.html">Resources & Licenses</a>
+      </nav>
+    </header>
+    <article class="article">
+      <div class="kicker">Privacy Policy</div>
+      <h1>Paws To Pass / 老鼠进洞</h1>
+      <p class="meta">Updated: 2026-05-14 · Public scope: <code>itch-web</code> HTML5 browser build</p>
+
+      <section class="section">
+        <h2>中文</h2>
+        <p>当前 <code>itch-web</code> 公开版会在浏览器本地处理关卡进度、金币、免费提示次数、奖励记录以及音乐 / 音效 / 语言等设置。这些数据主要用于让游戏正常运行和恢复进度。</p>
+        <p>当前版本会向项目维护方自建的 telemetry 服务发送匿名/去标识化运行与交互事件，用于统计会话、关卡、退出、提示、菜单、设置和浏览器运行情况，并生成按天、按关卡的聚合报表。</p>
+        <p>当前事件可能包含会话标识、会话内匿名玩家标识、事件时间、关卡编号、结果、退出去向、语言、视口尺寸、设备类型、当前页面的 <code>origin + pathname</code>、referrer 来源 origin、存储模式和会话级匿名身份模式。</p>
+        <p>当前公开版不包含奖励广告、应用内购买、账号登录、云存档、玩家聊天或基于真实身份的画像系统。</p>
+        <p>当前公开版会主动裁剪浏览器地址字段：<code>pageUrl</code> 只保留 <code>origin + pathname</code>，<code>referrer</code> 只保留来源 origin，不发送 query string、hash 或临时分享参数。</p>
+        <p>当前公开版 <code>itch-web</code> telemetry 现按 <code>session_only</code> 模式运行，会在当前浏览器会话内使用匿名 <code>player_id</code> 关联事件，但不再默认在浏览器本地保留跨会话 telemetry <code>player_id</code>。</p>
+        <p>原始事件当前按短期保留策略处理，Cloudflare Worker 环境默认将 <code>raw_events</code> 保留 <code>30</code> 天；按天、按关卡聚合后的统计可保留更久，用于运营分析、发版复盘和趋势比较。</p>
+        <p>作为底层托管、传输和存储基础设施，Cloudflare 还可能基于服务安全、网络传输与日志处理使用必要服务性 cookies 或网络层标识。</p>
+        <p>如后续版本新增 Billing、登录、广告或其他第三方 SDK，本页面会同步更新。</p>
+        <p>隐私与支持联系邮箱：<a href="mailto:dlxi230604@gmail.com">dlxi230604@gmail.com</a></p>
+      </section>
+
+      <section class="section">
+        <h2>English</h2>
+        <p>The current public <code>itch-web</code> build stores level progress, coins, free hints, reward records, and settings such as music, SFX, and language locally in the browser so the game can function and restore progress.</p>
+        <p>The current build sends anonymous or pseudonymous runtime and interaction events to a first-party telemetry service for session, level, exit, hint, menu, settings, and browser-runtime reporting, including daily aggregated gameplay metrics.</p>
+        <p>The current event stream may include session identifiers, session-scoped anonymous player identifiers, event time, level id, result, exit-target fields, language, viewport size, device class, the current page <code>origin + pathname</code>, referrer origin, storage mode, and session-level identity mode.</p>
+        <p>The current public build does not include rewarded ads, in-app purchases, account sign-in, cloud save, player chat, or real-identity profiling.</p>
+        <p>The current public build trims browser address fields before sending telemetry: <code>pageUrl</code> keeps only <code>origin + pathname</code>, and <code>referrer</code> keeps only the source origin. Query strings, hashes, and temporary share parameters are not sent.</p>
+        <p>The current public <code>itch-web</code> telemetry configuration now runs in <code>session_only</code> mode. It uses an anonymous <code>player_id</code> within the active browser session to correlate events, but it does not keep a cross-session telemetry <code>player_id</code> in local browser storage by default.</p>
+        <p>Raw events are currently kept on a short retention window. The Cloudflare Worker configuration keeps <code>raw_events</code> for <code>30</code> days by default, while aggregated per-day gameplay metrics may be retained longer for release review and product analytics.</p>
+        <p>As the hosting, transport, and storage infrastructure provider, Cloudflare may also use necessary service cookies or network-layer identifiers for service security, delivery, and logging.</p>
+        <p>If later versions add billing, sign-in, ads, or other SDKs, this page will be updated together with the runtime notices.</p>
+        <p>Privacy and support contact: <a href="mailto:dlxi230604@gmail.com">dlxi230604@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
