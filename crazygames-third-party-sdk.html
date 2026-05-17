@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paws To Pass - CrazyGames Service Notice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><a href="index.html">Paws To Pass / 鼠你能过</a></div>
+      <nav class="nav">
+        <a href="crazygames-privacy-policy.html">CrazyGames Privacy</a>
+        <a href="crazygames-third-party-sdk.html">CrazyGames Service Notice</a>
+        <a href="privacy-policy.html">itch Privacy</a>
+        <a href="third-party-sdk.html">itch SDK Notice</a>
+      </nav>
+    </header>
+    <article class="article">
+      <div class="kicker">CrazyGames Service Notice</div>
+      <h1>Paws To Pass / 鼠你能过</h1>
+      <p class="meta">Updated: 2026-05-17 · Scope: CrazyGames HTML5 build</p>
+
+      <section class="section">
+        <h2>Current disclosed services</h2>
+        <ul>
+          <li><strong>First-party telemetry service</strong>: anonymous or pseudonymous browser telemetry and gameplay reporting</li>
+          <li><strong>Cloudflare Workers + D1</strong>: event ingest, storage, and aggregate reporting</li>
+          <li><strong>CrazyGames SDK</strong>: platform lifecycle, wrapper integration, settings mute state, and SDK data integration</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Current identity scope</h2>
+        <p>The current CrazyGames telemetry posture uses <code>session_only</code> identity. It does not keep a cross-session telemetry <code>player_id</code> in local browser storage by default.</p>
+      </section>
+
+      <section class="section">
+        <h2>Current Basic Launch exclusions</h2>
+        <ul>
+          <li>external ad SDKs</li>
+          <li>external login SDKs</li>
+          <li>social-sharing SDKs</li>
+          <li>user-identity analytics beyond the first-party telemetry path described above</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Consistency rule</h2>
+        <p>Before submitting a CrazyGames candidate with telemetry enabled, this page, the CrazyGames privacy policy text, the actual runtime telemetry configuration, and the deployed Worker/D1 environment must all describe the same behavior.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
